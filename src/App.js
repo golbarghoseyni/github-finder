@@ -1,15 +1,14 @@
 import { Component } from 'react';
 import './App.css';
+import Navbar from './components/layout/Navbar';
 
 
 class App extends Component {
   render(){
-    const name = 'goli'
-    const loading = false
-    const showName = true
+   
     return (
       <div className="App">
-        {loading ? <h4>loading...</h4> : <h2>Hello {showName ? name : null}</h2>}
+       <Navbar />
       </div>
     );
 
